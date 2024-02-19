@@ -1,0 +1,44 @@
+@media (max-width: $breakpoint-desktop) {
+    .hero {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .hero-img-right {
+        padding-top: 10rem;
+    }
+
+    .hero-text-left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar {
+        .links-wrapper {
+            display: none; 
+        }
+
+        .hamburger-menu {
+            display: flex; 
+        }
+    }
+
+    .portfolio-cards-wrapper {
+        flex-direction: column !important;
+    }
+
+    
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+    .navbar {
+        padding: 1rem 1rem;
+    }
+
+    .hero {
+        padding: 1rem 1rem;
+    }
+
+
+}

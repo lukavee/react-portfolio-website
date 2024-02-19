@@ -1,0 +1,104 @@
+.hero {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12rem 2rem;
+    background: $secondary-color;
+}
+
+.hero-img-right {
+  img {
+    max-width: 100%;
+      height: auto;
+      display: block;
+  }
+}
+
+.hero-text-left {
+    max-width: 60rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1 {
+        font-size: get-font-size('h1');
+    }
+
+    p {
+        font-size: get-font-size('h5');
+    }
+
+    span {
+        color: $tertiary-color;
+    }
+
+    button {
+        width: 20rem;
+        cursor: pointer;
+        padding: 1rem 3rem 1rem 3rem;
+        background: transparent;
+        border: 3px solid $tertiary-color;
+        color: $white-text;
+        font-size: get-font-size('h5');
+        font-weight: get-font-weight('super');
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+
+    .hire-link {
+        color: $white-text;
+    }
+
+    button:hover {
+        background: $tertiary-color;
+        color: $white-text;
+    }
+}
+
+// Animations 
+
+.hero-text-left, .hero-img-right {
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .animation-finished .hero-text-left {
+    opacity: 1; 
+  }
+  
+  .animation-finished .hero-img-right {
+    opacity: 1; 
+  }
+  
+  .fade-in-left {
+    animation: fadeInLeft 1s ease-in-out; 
+  }
+  
+  .fade-in-right {
+    animation: fadeInRight 1s ease-in-out; 
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+

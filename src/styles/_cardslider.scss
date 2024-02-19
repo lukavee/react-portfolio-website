@@ -1,0 +1,51 @@
+.card-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 3rem 4rem;
+    margin-top: 10rem;
+
+              h2 {
+                font-size: get-font-size('h2');
+                padding-bottom: 2rem;
+              }
+
+              .cards {
+                display: flex;
+              }
+              
+              .card {
+                display: none;
+                text-align: center;
+                font-size: get-font-size('h4');
+                
+              }
+              
+              .card.active {
+                display: block;
+              }
+              
+              .arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: none;
+                border: none;
+                font-size: get-font-size('h2');
+                cursor: pointer;
+              }
+              
+              .left-arrow {
+                left: 1rem;
+              }
+              
+              .right-arrow {
+                right: 1rem;
+              }
+  }
+  
+  
+  
+  

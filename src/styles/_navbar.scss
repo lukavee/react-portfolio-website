@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: $secondary-color;
+    padding: 2rem 6rem;
+}
+
+.logo {
+     @include flex-center;
+
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                }
+}
+
+
+
+.socials-links {
+    @include flex-center;
+
+                .socials-wrapper {
+                    @include flex-center;
+                    gap: 2rem;
+                    list-style: none;
+
+
+                            .icon {
+                                color: $white-text;
+                                font-size: get-font-size('h5');
+                                @include hover-color(#EF4040);
+                            }
+                
+                }
+}
+
+
+
+.navbar-links {
+    @include flex-center;
+
+                .links-wrapper {
+                    @include flex-center;
+                    gap: 5rem;
+                    list-style: none;
+                }
+                
+                .links-wrapper li a {
+                    color: $white-text;
+                    font-size: get-font-size('h5');
+                    @include hover-color(#EF4040);
+                }
+}
+
+
+
